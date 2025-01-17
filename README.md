@@ -120,7 +120,8 @@ streamlit run app.py
 ## Dependencies
 
 ```
-tensorflow==2.15.0
+tensorflow-macos==2.12.0
+tensorflow-metal==1.0.0
 streamlit==1.31.1
 opencv-python-headless==4.9.0.80
 Pillow==10.2.0
