@@ -106,7 +106,7 @@ with tab1:
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
         image = np.array(image)
-        st.image(image, caption="Uploaded Image", use_container_width=True)
+        st.image(image, caption="Uploaded Image", width=IMG_WIDTH * 2)
         
         if st.button("Classify Gender"):
             with st.spinner("Processing..."):
@@ -124,7 +124,7 @@ with tab2:
     if camera is not None:
         image = Image.open(camera)
         image = np.array(image)
-        st.image(image, use_container_width=True)
+        st.image(image, width=IMG_WIDTH * 2)
 
         with st.spinner("Processing..."):
             processed_image = preprocess_image(image)
